@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>worst fellow subs</title>
+#<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+<style>
+#myHeader {
+  background-color: lightgreen;
+  color: blue;
+  padding: 40px;
+  text-align: center;
+} 
+</style>
+<h1 id="WEB PAGE">WEB PAGE</h1>
+<h1>My my name is Siva Prasad G</h1>
+<h2>failure subject:4</h2>
+<h3>waste pice</h3>
+<p>worst fellow</p>
+<p>paragraph</p>
+<img src="1.jpg" alt="Italian Trulli"width="500" height="333">
+<style>
+body {
+  background-image: url('2.jpg');
+}
+</style>
+<h3>table format</h3>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>subjects</th>
+    <th>subject names</th>
+  </tr>
+  <tr>
+    <td>Siva</td>
+    <td> G</td>
+    <td>4</td>
+    <td>mechanics
+        physics
+        ads
+        flat</td>
+  </tr>
+  <tr>
+    <td>lokesh</td>
+    <td>P</td>
+    <td>0</td>
+    <td>nothing</td>
+  </tr>
+  <tr>
+    <td>tarun</td>
+    <td>b</td>
+    <td>12</td>
+    <td>num of subs</td>
+  </tr>
+</table>
+<h3>video format</h3>
+<video width="320" height="240" controls>
+  <source src="3.mp4" type="video/mp4">
+</video>
+<h3>audio fomat</h3>
+
+<audio controls>
+  <source src="4.mp3" type="audio/mpeg">
+</audio>
+<h2>location</h2>
+ <p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<h2>ytvideo</h2>
+<iframe width="420" height="345" src="https://www.youtube.com/watch?v=3E8-l0y_ssc&feature=youtu.be">
+</iframe>
+<h2>for object</h2>
+<object data="5.jpg"></object>
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+</body>
+</html>
